@@ -1,0 +1,74 @@
+<div class="gridPage">
+  <header class="row m-3">
+    <div class="col-3 logo">
+      <img src="assets/logo/logoIcon.png" id="logoIcon">
+    </div>
+    <div class="col-7 col-sm-7  navbar">
+      <ul class="row">
+        <li class="col-3 navbarLi">Hakkımızda</li>
+        <li class="col-3 navbarLi">Jüri-Yarışma Yazılımı</li>
+        <li class="col-3 navbarLi">Word-Ninja</li>
+        <li class="col-3 navbarLi">Word Pyramids</li>
+      </ul>
+    </div>
+    <div class="col-2 icons">
+      <ul class="row mt-4">
+        <li class="col-3 iconsLi"><i class="fa-brands fa-square-youtube"></i></li>
+        <li class="col-3 iconsLi"><i class="fa-brands fa-square-instagram"></i></li>
+        <li class="col-3 iconsLi"><i class="fa-brands fa-square-behance"></i></li>
+        <li class="col-3 iconsLi"><i class="fa-brands fa-linkedin"></i></li>
+      </ul>
+    </div>
+  </header>
+  <div class="dg-body m-3">
+    <nav class="navbar">
+      <div class="container-fluid">
+        <div class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search objects..." id="searchButton" aria-label="Search">
+          <div class="searchIcon">
+            <i class="fas fa-search " id="searchIconItem"></i>
+          </div>
+          <div class="filter">
+            <i class="fas fa-filter" id="filterIconItem"></i>
+          </div>
+        </div>
+        <a class="navbar-brand mt-4">
+          <p class="addNewAccount"  (click)="openDialog()">
+            <span class="plussIcon">
+             <i class="fas fa-plus" id="plusIconItem"></i>
+            </span>Yeni hesap ekle</p></a>
+      </div>
+    </nav>
+    <div class="grid m-5">
+      <dx-data-grid
+        #grid
+        [dataSource]="dataSource"
+        [allowColumnReordering]="true"
+        [allowColumnResizing]="true"
+        [columnAutoWidth]="true"
+        [rowAlternationEnabled]="true">
+        <dxi-column dataField="socialLink"></dxi-column>
+        <dxi-column dataField="socialName"></dxi-column>
+        <dxi-column dataField="remark" class="deneme"></dxi-column>
+      </dx-data-grid>
+    </div>
+    <footer class="footer m-5">
+      <div class="footerShowLeft">
+        <p class="show">Show: </p>
+        <div id="footerRows">
+          <p>4 rows</p>
+          <div class="icons">
+            <i class="fa-sharp fa-solid fa-sort"></i>
+          </div>
+        </div>
+      </div>
+      <div class="footerShowRight">
+        <div id="footerRight">
+          <i class="fab-sharp fa-solid fa-chevron-left"></i>
+            <p><span id="firstNum">1</span> of <span id="secondNum">4</span></p>
+          <i class="fab-sharp fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>

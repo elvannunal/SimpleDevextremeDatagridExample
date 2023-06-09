@@ -1,0 +1,232 @@
+#searchButton{
+  position: absolute;
+  width: 380px;
+  height: 42px;
+  background: #FFFFFF;
+  border-radius: 39px;
+  margin-top: 28px;
+  margin-left: 41px;
+}
+#logoIcon{
+  width: 180px;
+}
+.addNewAccount{
+  margin-left: 19px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+  margin-top: -8px;
+}
+
+.plussIcon{
+  width: 0px;
+  height: 12px;
+  border: none;
+  border-radius: 1px;
+  transform: rotate(90deg);
+}
+.navbar-brand{
+
+  width: 175px;
+  height: 42px;
+
+  background: #744BFC;
+  border-radius: 39px;
+}
+
+ul{
+  list-style-type:none;
+}
+
+.navbarLi {
+  padding: 12px;
+  margin-top:12px;
+  width: 250px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+.searchIcon{
+  width: 40px;
+  height: 41px;
+  background: #744BFC;
+  z-index: 1;
+  border-radius: 0px 22px 22px 0px;
+  margin-left: 24pc;
+  margin-top: 28px;
+}
+#searchIconItem{
+  margin-top: 12px;
+  margin-left: 11px;
+  background: #744BFC !important;
+  color: #fff !important;
+}
+#plusIconItem{
+  margin-top: 12px;
+  margin-left: 11px;
+  background: #744BFC !important;
+  color: #fff !important;
+}
+#filterIconItem{
+  margin-top: 13px;
+  margin-left: 13px;
+}
+.filter{
+  margin-left: 12px;
+  width: 42px !important;
+  height: 42px !important;
+  background: #fff !important;
+  color: #744BFC !important;
+  borrder-radius: 100%;
+  border-radius: 100%;
+  margin-top: 29px;
+}
+
+.footer,.footerShowLeft,.footerShowRight,#footerRight{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.show{
+  font-size: 13.7px;
+  width: 36px;
+  height: 18px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  color: #744BFC;
+  margin-top:19px;
+}
+#footerRows{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  width: 90px;
+  height: 37px;
+  background: #FFFFFF;
+  border: 1px solid #CFC0FF;
+  border-radius: 39px;
+  margin-left: 60px;
+}
+#footerRows, p{
+  padding: 4px;
+  margin-top: 13px;
+  font-size: 13.7px;
+  text-align: justify;
+}
+#firstNum{
+  box-sizing: border-box;
+  padding: 8px;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 4px;
+}
+#secondNum{
+  padding: 8px;
+}
+::ng-deep.dx-datagrid, .grid {
+  border-radius: 16px !important;
+}
+.dg-body{
+  background: linear-gradient(180deg, #EFF2FF -30.56%, rgba(232, 236, 255, 0) 135.85%);
+  border-radius: 6px;
+  height: 859px;
+  width: 1875px;
+}
+
+::ng-deep .fa, .fa-brands, .fa-classic, .fa-regular, .fa-sharp, .fa-solid, .fab, .far, .fas {
+  width: 18px !important;
+  height: 18px !important;
+  background: #fff !important;
+  color: #744BFC !important;
+}
+::ng-deep.dx-datagrid-rowsview .dx-row {
+  height: 63px;
+}
+
+::ng-deep.dx-datagrid .dx-row-alt > td,
+.dx-datagrid .dx-row-alt > tr > td {
+  background: linear-gradient(180deg, #EFF2FF -30.56%, rgba(232, 236, 255, 0) 135.85%);
+}
+::ng-deep .dx-header-row{
+  height: 63px;
+
+}
+
+/* Ekran boyutu 768px ve altı için responsive design */
+@media (max-width: 768px) {
+  .navbarLi{
+    width: auto !important;
+  }
+  .gridPage,.grid,.dg-body{
+    width: auto;
+    height: auto;
+  }
+  .container-fluid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #logoIcon{
+    width: 130px;
+  }
+}
+
+/* Ekran boyutu 769px ile 1200px arası için  responsive design */
+@media (min-width: 769px) and (max-width: 1200px) {
+
+  .navbarLi{
+    width: auto !important;
+  }
+  .gridPage,.grid,.dg-body{
+    width: auto;
+    height: auto;
+  }
+  #logoIcon{
+    width: 150px;
+  }
+  .container-fluid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+}
+
+/* Ekran boyutu 1201px ile 1440px arası için  responsive design */
+@media (min-width: 1201px) and (max-width: 1440px) {
+  .gridPage,.grid,.dg-body{
+    width: auto;
+    height: auto;
+  }
+  .navbarLi{
+    width: 150px;
+  }
+  .container-fluid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/* Ekran boyutu 1441px ile 2048px arası için  responsive design*/
+@media (min-width: 1441px) and (max-width: 1700px) {
+  .navbarLi{
+    width: 200px;
+  }
+  .gridPage,.grid,.dg-body{
+    width: auto;
+    height: auto;
+  }
+  .container-fluid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+}
